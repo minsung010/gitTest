@@ -1,4 +1,2 @@
-Test project
+*Test project*
 ======
-- list
-- list
