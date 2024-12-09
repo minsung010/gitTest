@@ -95,7 +95,7 @@ if operation == 'get':
 
 
                 if len(data[4:]) < BLOCK_SIZE:
-                    print("File transfer completed")
+                    print("파일 get 완료")
                     break
             except socket.timeout:
                 print("Timeout: No response from server.")
@@ -131,7 +131,7 @@ elif operation == 'put':
                         sock.sendto(data_packet, server_address)
                         continue
 
-        print("File upload completed.")
+        print("파일 put 완료")
     except FileNotFoundError:
         print(f"Error: {filename} not found.")
 
